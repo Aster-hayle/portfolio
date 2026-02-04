@@ -296,6 +296,193 @@
         border-color: var(--primary);
         box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
       }
+
+      /* Mobile-specific optimizations */
+      @media (max-width: 768px) {
+        .main-content {
+          padding-top: 70px;
+          padding-bottom: 120px;
+        }
+
+        nav .container {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .text-5xl {
+          font-size: 2.5rem;
+        }
+
+        .text-6xl {
+          font-size: 3rem;
+        }
+
+        .text-7xl {
+          font-size: 3.5rem;
+        }
+
+        .text-4xl {
+          font-size: 2rem;
+        }
+
+        .text-3xl {
+          font-size: 1.75rem;
+        }
+
+        .text-2xl {
+          font-size: 1.5rem;
+        }
+
+        .text-xl {
+          font-size: 1.25rem;
+        }
+
+        .text-lg {
+          font-size: 1.125rem;
+        }
+
+        .section-title::after {
+          width: 80%;
+          left: 10%;
+        }
+
+        .experience-badge {
+          transform: scale(0.8);
+          right: -1rem;
+          bottom: -1rem;
+        }
+
+        .profile-img {
+          width: 200px;
+          height: 200px;
+        }
+
+        .py-32 {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+
+        .pl-12 {
+          padding-left: 0;
+        }
+
+        .md\:pl-12 {
+          padding-left: 0;
+        }
+
+        .grid-cols-4 {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .grid-cols-3 {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .grid-cols-2 {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .skill-card {
+          margin-bottom: 1rem;
+        }
+
+        .portfolio-item {
+          margin-bottom: 1.5rem;
+        }
+
+        .timeline-item {
+          padding-left: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          padding: 0.75rem 1.5rem;
+          font-size: 0.875rem;
+        }
+
+        footer {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          position: relative;
+        }
+
+        footer.fixed {
+          position: relative;
+          bottom: auto;
+        }
+
+        .mobile-menu-open {
+          display: block !important;
+        }
+
+        .portfolio-overlay {
+          padding: 1rem;
+        }
+
+        .portfolio-overlay h3 {
+          font-size: 1.125rem;
+        }
+
+        .portfolio-overlay p {
+          font-size: 0.875rem;
+        }
+
+        .contact-input {
+          font-size: 16px; /* Prevents zoom on iOS */
+        }
+      }
+
+      @media (max-width: 640px) {
+        .profile-img {
+          width: 180px;
+          height: 180px;
+        }
+
+        .text-5xl {
+          font-size: 2.25rem;
+        }
+
+        .text-6xl {
+          font-size: 2.5rem;
+        }
+
+        .py-32 {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+
+        .flex.flex-col.md\:flex-row {
+          flex-direction: column;
+        }
+
+        .md\:w-1\/2,
+        .md\:w-2\/5,
+        .md\:w-3\/5 {
+          width: 100%;
+        }
+
+        .experience-badge {
+          transform: scale(0.7);
+          right: -0.5rem;
+          bottom: -0.5rem;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .grid-cols-4 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-cols-3 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .profile-img {
+          width: 240px;
+          height: 240px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -305,99 +492,105 @@
     <!-- Fixed Navigation -->
     <nav class="fixed w-full glass-effect z-50">
       <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
+        class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center"
       >
-        <div class="text-2xl font-bold gradient-text">Aster Hayle</div>
+        <div class="text-xl sm:text-2xl font-bold gradient-text">
+          Aster Hayle
+        </div>
 
-        <div class="hidden md:flex space-x-8">
+        <div class="hidden md:flex space-x-6 lg:space-x-8">
           <a
             href="#home"
-            class="nav-link text-gray-300 hover:text-white transition nav-item active-nav"
+            class="nav-link text-gray-300 hover:text-white transition nav-item active-nav text-sm lg:text-base"
             data-target="home"
             >Home</a
           >
           <a
             href="#about"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item text-sm lg:text-base"
             data-target="about"
             >About</a
           >
           <a
             href="#skills"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item text-sm lg:text-base"
             data-target="skills"
             >Skills</a
           >
           <a
             href="#services"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item text-sm lg:text-base"
             data-target="services"
             >Services</a
           >
           <a
             href="#portfolio"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item text-sm lg:text-base"
             data-target="portfolio"
             >Portfolio</a
           >
           <a
             href="#contact"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item text-sm lg:text-base"
             data-target="contact"
             >Contact</a
           >
         </div>
 
-        <a
-          href="cv.pdf"
-          download
-          data-download="cv.pdf"
-          class="btn-primary text-white px-6 py-3 rounded-lg flex items-center shadow-md"
-        >
-          <i class="fas fa-download mr-2"></i> Download CV
-        </a>
-        <!-- Mobile menu button -->
-        <button class="md:hidden text-gray-300" id="mobile-menu-button">
-          <i class="fas fa-bars text-xl"></i>
-        </button>
+        <div class="flex items-center space-x-4">
+          <a
+            href="cv.pdf"
+            download
+            data-download="cv.pdf"
+            class="btn-primary text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg flex items-center shadow-md text-sm sm:text-base"
+          >
+            <i class="fas fa-download mr-2"></i>
+            <span class="hidden sm:inline">Download CV</span>
+            <span class="sm:hidden">CV</span>
+          </a>
+          <!-- Mobile menu button -->
+          <button class="md:hidden text-gray-300 ml-2" id="mobile-menu-button">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div class="md:hidden hidden bg-gray-900 py-4" id="mobile-menu">
-        <div class="container mx-auto px-6 flex flex-col space-y-4">
+      <div class="md:hidden hidden bg-gray-900 py-3" id="mobile-menu">
+        <div class="container mx-auto px-4 flex flex-col space-y-3">
           <a
             href="#home"
-            class="nav-link text-white transition nav-item active-nav"
+            class="nav-link text-white transition nav-item active-nav py-2"
             data-target="home"
             >Home</a
           >
           <a
             href="#about"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item py-2"
             data-target="about"
             >About</a
           >
           <a
             href="#skills"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item py-2"
             data-target="skills"
             >Skills</a
           >
           <a
             href="#services"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item py-2"
             data-target="services"
             >Services</a
           >
           <a
             href="#portfolio"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item py-2"
             data-target="portfolio"
             >Portfolio</a
           >
           <a
             href="#contact"
-            class="nav-link text-gray-300 hover:text-white transition nav-item"
+            class="nav-link text-gray-300 hover:text-white transition nav-item py-2"
             data-target="contact"
             >Contact</a
           >
@@ -408,40 +601,49 @@
     <!-- Main Content Area -->
     <div class="main-content">
       <!-- Home Section -->
-      <section id="home" class="section active flex items-center py-32">
+      <section
+        id="home"
+        class="section active flex items-center py-16 sm:py-24 md:py-32"
+      >
         <div
-          class="container mx-auto px-6 flex flex-col md:flex-row items-center"
+          class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center"
         >
           <!-- Text Content -->
-          <div class="md:w-1/2 mb-10 md:mb-0 pl-12">
-            <div class="text-sm text-indigo-400 font-medium mb-4">
+          <div
+            class="md:w-1/2 mb-8 md:mb-0 md:pl-6 lg:pl-12 order-2 md:order-1"
+          >
+            <div class="text-sm text-indigo-400 font-medium mb-3 sm:mb-4">
               Hello, I'm
             </div>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-4"
+            >
               Aster <span class="gradient-text">Hayle</span>
             </h1>
-            <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">
+            <h2
+              class="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-4 sm:mb-6"
+            >
               And I'm an
-              <span class="gradient-text"
+              <span class="gradient-text block sm:inline"
                 >Executive Secretary and Implementer</span
               >
             </h2>
-            <p class="text-gray-400 mb-8 max-w-lg text-lg">
+            <p class="text-gray-400 mb-6 sm:mb-8 max-w-lg text-base sm:text-lg">
               I work as an Executive Secretary and Implementer. My duties
               include secretarial work, correspondence, filing, processing
               administrative tasks, and handling income tax.
             </p>
 
             <div
-              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+              class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4"
             >
               <button
-                class="btn-primary text-white px-8 py-4 rounded-lg font-medium"
+                class="btn-primary text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium text-sm sm:text-base w-full sm:w-auto"
               >
                 Hire Me
               </button>
               <button
-                class="btn-outline px-8 py-4 rounded-lg font-medium"
+                class="btn-outline px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium text-sm sm:text-base w-full sm:w-auto"
                 data-target="portfolio"
               >
                 View Portfolio
@@ -450,11 +652,13 @@
           </div>
 
           <!-- Profile Image -->
-          <div class="md:w-1/2 flex justify-center relative">
+          <div
+            class="md:w-1/2 flex justify-center relative mb-8 md:mb-0 order-1 md:order-2"
+          >
             <div class="relative floating">
               <!-- Square profile image -->
               <div
-                class="profile-img w-64 h-64 md:w-80 md:h-80 square-profile overflow-hidden shadow-xl"
+                class="profile-img w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 square-profile overflow-hidden shadow-xl mx-auto"
               >
                 <!-- Profile image -->
                 <img
@@ -466,10 +670,12 @@
 
               <!-- Experience Badge -->
               <div
-                class="experience-badge absolute -bottom-4 -right-4 rounded-xl p-4"
+                class="experience-badge absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 rounded-xl p-3 sm:p-4"
               >
-                <div class="text-3xl font-bold text-indigo-600">5+</div>
-                <div class="text-sm text-gray-500">
+                <div class="text-2xl sm:text-3xl font-bold text-indigo-600">
+                  5+
+                </div>
+                <div class="text-xs sm:text-sm text-gray-500">
                   Years of<br />Experience
                 </div>
               </div>
@@ -479,21 +685,25 @@
       </section>
 
       <!-- About Section -->
-      <section id="about" class="section py-32">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-4 section-title">
+      <section id="about" class="section py-16 sm:py-24 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 section-title"
+          >
             About Me
           </h2>
-          <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+          <p
+            class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base"
+          >
             Executive Secretary and Implementer with expertise in administrative
             management and tax-related tasks
           </p>
 
           <div class="flex flex-col md:flex-row items-center">
             <!-- Profile Image -->
-            <div class="md:w-2/5 flex justify-center mb-10 md:mb-0">
+            <div class="md:w-2/5 flex justify-center mb-6 sm:mb-8 md:mb-0">
               <div
-                class="profile-img w-64 h-64 md:w-80 md:h-80 square-profile overflow-hidden shadow-xl"
+                class="profile-img w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 square-profile overflow-hidden shadow-xl"
               >
                 <!-- Profile image -->
                 <img
@@ -505,52 +715,58 @@
             </div>
 
             <!-- Text Content -->
-            <div class="md:w-3/5 md:pl-12">
-              <h3 class="text-2xl font-semibold mb-6 gradient-text">
+            <div class="md:w-3/5 md:pl-6 lg:pl-12">
+              <h3
+                class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 gradient-text"
+              >
                 Executive Secretary and Implementer
               </h3>
-              <p class="text-gray-400 mb-8 text-lg">
+              <p class="text-gray-400 mb-6 sm:mb-8 text-base sm:text-lg">
                 My role is that of an Executive Secretary and Implementer. I am
                 responsible for secretarial duties, managing correspondence,
                 filing documents, and processing administrative matters. I also
                 handle income tax-related tasks.
               </p>
 
-              <div class="mb-8">
-                <h4 class="text-xl font-semibold mb-4">My Experience</h4>
-                <div class="space-y-4">
+              <div class="mb-6 sm:mb-8">
+                <h4 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
+                  My Experience
+                </h4>
+                <div class="space-y-3 sm:space-y-4">
                   <div class="timeline-item">
-                    <h5 class="font-medium text-lg">
+                    <h5 class="font-medium text-base sm:text-lg">
                       Executive Secretary and Implementer
                     </h5>
-                    <p class="text-indigo-400 text-sm mb-2">
+                    <p class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2">
                       Corporate Solutions Inc. • 2020 - Present
                     </p>
-                    <p class="text-gray-400">
+                    <p class="text-gray-400 text-sm">
                       Managed executive correspondence, organized filing
                       systems, processed administrative documents, and handled
                       income tax preparation and filing for the organization.
                     </p>
                   </div>
                   <div class="timeline-item">
-                    <h5 class="font-medium text-lg">
+                    <h5 class="font-medium text-base sm:text-lg">
                       Administrative Specialist
                     </h5>
-                    <p class="text-indigo-400 text-sm mb-2">
+                    <p class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2">
                       Financial Services Group • 2018 - 2020
                     </p>
-                    <p class="text-gray-400">
+                    <p class="text-gray-400 text-sm">
                       Provided comprehensive administrative support including
                       document management, correspondence handling, and tax
                       documentation preparation for multiple departments.
                     </p>
                   </div>
                   <div class="timeline-item">
-                    <h5 class="font-medium text-lg">Office Administrator</h5>
-                    <p class="text-indigo-400 text-sm mb-2">
+                    <h5 class="font-medium text-base sm:text-lg">
+                      Office Administrator
+                    </h5>
+                    <p class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2">
                       Business Consulting Firm • 2016 - 2018
                     </p>
-                    <p class="text-gray-400">
+                    <p class="text-gray-400 text-sm">
                       Handled general office administration, client
                       correspondence, scheduling, and basic financial
                       documentation support.
@@ -563,7 +779,7 @@
                 href="cv.pdf"
                 download
                 data-download="cv.pdf"
-                class="btn-primary text-white px-6 py-3 rounded-lg flex items-center shadow-md"
+                class="btn-primary text-white px-6 py-3 rounded-lg flex items-center shadow-md text-sm sm:text-base w-full md:w-auto justify-center"
               >
                 <i class="fas fa-download mr-2"></i> Download CV
               </a>
@@ -573,128 +789,158 @@
       </section>
 
       <!-- Skills Section -->
-      <section id="skills" class="section py-32">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-4 section-title">
+      <section id="skills" class="section py-16 sm:py-24 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 section-title"
+          >
             My Skills
           </h2>
-          <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+          <p
+            class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base"
+          >
             Specialized in administrative management, documentation, and
             tax-related tasks
           </p>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
+          >
             <!-- Skill 1 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-file-alt text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-file-alt text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Document Management</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Document Management
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Expert in filing, organizing, and maintaining document systems
                 with precision and confidentiality.
               </p>
             </div>
 
             <!-- Skill 2 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-envelope text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-envelope text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
                 Correspondence Management
               </h3>
-              <p class="text-gray-400">
+              <p class="text-gray-400 text-sm sm:text-base">
                 Professional handling of emails, letters, and official
                 communications with attention to detail.
               </p>
             </div>
 
             <!-- Skill 3 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-calculator text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-calculator text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Income Tax Processing</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Income Tax Processing
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Skilled in preparing, processing, and filing income tax
                 documents and related financial paperwork.
               </p>
             </div>
 
             <!-- Skill 4 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-tasks text-indigo-400 text-2xl"></i>
+                <i class="fas fa-tasks text-indigo-400 text-xl sm:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
                 Administrative Processing
               </h3>
-              <p class="text-gray-400">
+              <p class="text-gray-400 text-sm sm:text-base">
                 Efficient processing of administrative matters including
                 scheduling, reporting, and office management.
               </p>
             </div>
 
             <!-- Skill 5 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-calendar-check text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-calendar-check text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Schedule Management</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Schedule Management
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Organizing and maintaining executive schedules, appointments,
                 and meeting coordination.
               </p>
             </div>
 
             <!-- Skill 6 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-chart-pie text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-chart-pie text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Record Keeping</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Record Keeping
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Maintaining accurate records, databases, and filing systems for
                 efficient information retrieval.
               </p>
             </div>
 
             <!-- Skill 7 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-users text-indigo-400 text-2xl"></i>
+                <i class="fas fa-users text-indigo-400 text-xl sm:text-2xl"></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Client Relations</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Client Relations
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Professional communication and relationship management with
                 clients and stakeholders.
               </p>
             </div>
 
             <!-- Skill 8 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-laptop text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-laptop text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Office Software</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Office Software
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Proficient in Microsoft Office Suite, document processing
                 software, and administrative tools.
               </p>
@@ -704,99 +950,125 @@
       </section>
 
       <!-- Services Section -->
-      <section id="services" class="section py-32">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-4 section-title">
+      <section id="services" class="section py-16 sm:py-24 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 section-title"
+          >
             My Services
           </h2>
-          <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+          <p
+            class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base"
+          >
             Comprehensive administrative and secretarial support services
           </p>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
+          >
             <!-- Service 1 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-briefcase text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-briefcase text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
                 Executive Secretarial Support
               </h3>
-              <p class="text-gray-400">
+              <p class="text-gray-400 text-sm sm:text-base">
                 Comprehensive secretarial duties including correspondence
                 management, scheduling, and executive support.
               </p>
             </div>
 
             <!-- Service 2 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-file-contract text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-file-contract text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Document Processing</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Document Processing
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Professional filing, organization, and management of documents
                 and records with confidentiality.
               </p>
             </div>
 
             <!-- Service 3 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-handshake text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-handshake text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
                 Administrative Implementation
               </h3>
-              <p class="text-gray-400">
+              <p class="text-gray-400 text-sm sm:text-base">
                 Effective implementation of administrative processes and office
                 management systems.
               </p>
             </div>
 
             <!-- Service 4 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-money-check-alt text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-money-check-alt text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Tax Documentation</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Tax Documentation
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Preparation, processing, and management of income tax documents
                 and related financial paperwork.
               </p>
             </div>
 
             <!-- Service 5 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-calendar-alt text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-calendar-alt text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Meeting Coordination</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Meeting Coordination
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Organization and coordination of meetings, appointments, and
                 executive schedules.
               </p>
             </div>
 
             <!-- Service 6 -->
-            <div class="skill-card p-6 rounded-xl shadow-sm">
+            <div class="skill-card p-4 sm:p-6 rounded-xl shadow-sm">
               <div
-                class="w-14 h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-4"
+                class="w-12 h-12 sm:w-14 sm:h-14 bg-indigo-500 bg-opacity-20 rounded-lg flex items-center justify-center mb-3 sm:mb-4"
               >
-                <i class="fas fa-clipboard-list text-indigo-400 text-2xl"></i>
+                <i
+                  class="fas fa-clipboard-list text-indigo-400 text-xl sm:text-2xl"
+                ></i>
               </div>
-              <h3 class="text-xl font-semibold mb-2">Office Management</h3>
-              <p class="text-gray-400">
+              <h3 class="text-lg sm:text-xl font-semibold mb-2">
+                Office Management
+              </h3>
+              <p class="text-gray-400 text-sm sm:text-base">
                 Efficient office operations management including supplies,
                 equipment, and workflow coordination.
               </p>
@@ -806,30 +1078,38 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="section py-32">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-4 section-title">
+      <section id="portfolio" class="section py-16 sm:py-24 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 section-title"
+          >
             My Portfolio
           </h2>
-          <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+          <p
+            class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base"
+          >
             A selection of my administrative projects and accomplishments
           </p>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
+          >
             <!-- Portfolio Item 1 -->
             <div class="portfolio-item rounded-xl overflow-hidden shadow-sm">
               <div
-                class="h-64 bg-gradient-to-br from-indigo-400 to-purple-500"
+                class="h-48 sm:h-56 md:h-64 bg-gradient-to-br from-indigo-400 to-purple-500"
               ></div>
               <div class="portfolio-overlay">
-                <h3 class="text-xl font-semibold mb-2 text-white">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2 text-white">
                   Document Management System
                 </h3>
-                <p class="text-gray-300 mb-4 text-center">
+                <p
+                  class="text-gray-300 mb-3 sm:mb-4 text-center text-sm sm:text-base"
+                >
                   Implemented a comprehensive document filing and retrieval
                   system that improved efficiency by 40%.
                 </p>
-                <span class="text-indigo-400 font-medium"
+                <span class="text-indigo-400 font-medium text-sm sm:text-base"
                   >Administrative Project</span
                 >
               </div>
@@ -838,17 +1118,19 @@
             <!-- Portfolio Item 2 -->
             <div class="portfolio-item rounded-xl overflow-hidden shadow-sm">
               <div
-                class="h-64 bg-gradient-to-br from-blue-400 to-teal-500"
+                class="h-48 sm:h-56 md:h-64 bg-gradient-to-br from-blue-400 to-teal-500"
               ></div>
               <div class="portfolio-overlay">
-                <h3 class="text-xl font-semibold mb-2 text-white">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2 text-white">
                   Tax Processing Workflow
                 </h3>
-                <p class="text-gray-300 mb-4 text-center">
+                <p
+                  class="text-gray-300 mb-3 sm:mb-4 text-center text-sm sm:text-base"
+                >
                   Developed and implemented an efficient income tax document
                   processing system for corporate clients.
                 </p>
-                <span class="text-indigo-400 font-medium"
+                <span class="text-indigo-400 font-medium text-sm sm:text-base"
                   >Tax Administration</span
                 >
               </div>
@@ -857,17 +1139,19 @@
             <!-- Portfolio Item 3 -->
             <div class="portfolio-item rounded-xl overflow-hidden shadow-sm">
               <div
-                class="h-64 bg-gradient-to-br from-green-400 to-blue-500"
+                class="h-48 sm:h-56 md:h-64 bg-gradient-to-br from-green-400 to-blue-500"
               ></div>
               <div class="portfolio-overlay">
-                <h3 class="text-xl font-semibold mb-2 text-white">
+                <h3 class="text-lg sm:text-xl font-semibold mb-2 text-white">
                   Executive Correspondence System
                 </h3>
-                <p class="text-gray-300 mb-4 text-center">
+                <p
+                  class="text-gray-300 mb-3 sm:mb-4 text-center text-sm sm:text-base"
+                >
                   Created an organized correspondence management system that
                   streamlined executive communication.
                 </p>
-                <span class="text-indigo-400 font-medium"
+                <span class="text-indigo-400 font-medium text-sm sm:text-base"
                   >Secretarial Project</span
                 >
               </div>
@@ -877,55 +1161,67 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="section py-32">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-center mb-4 section-title">
+      <section id="contact" class="section py-16 sm:py-24 md:py-32">
+        <div class="container mx-auto px-4 sm:px-6">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 section-title"
+          >
             Contact Me
           </h2>
-          <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12">
+          <p
+            class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base"
+          >
             Let's discuss how I can support your administrative needs
           </p>
 
           <div class="max-w-3xl mx-auto">
-            <div class="skill-card p-8 rounded-xl shadow-sm">
-              <form class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="skill-card p-6 sm:p-8 rounded-xl shadow-sm">
+              <form class="space-y-4 sm:space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
-                    <label class="block text-gray-300 mb-2">Name</label>
+                    <label class="block text-gray-300 mb-2 text-sm sm:text-base"
+                      >Name</label
+                    >
                     <input
                       type="text"
-                      class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none"
+                      class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
                       placeholder="Your Name"
                     />
                   </div>
                   <div>
-                    <label class="block text-gray-300 mb-2">Email</label>
+                    <label class="block text-gray-300 mb-2 text-sm sm:text-base"
+                      >Email</label
+                    >
                     <input
                       type="email"
-                      class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none"
+                      class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
                       placeholder="Your Email"
                     />
                   </div>
                 </div>
                 <div>
-                  <label class="block text-gray-300 mb-2">Subject</label>
+                  <label class="block text-gray-300 mb-2 text-sm sm:text-base"
+                    >Subject</label
+                  >
                   <input
                     type="text"
-                    class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none"
+                    class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
                     placeholder="Subject"
                   />
                 </div>
                 <div>
-                  <label class="block text-gray-300 mb-2">Message</label>
+                  <label class="block text-gray-300 mb-2 text-sm sm:text-base"
+                    >Message</label
+                  >
                   <textarea
-                    rows="5"
-                    class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none"
+                    rows="4"
+                    class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
                     placeholder="Your Message"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  class="btn-primary text-white px-8 py-3 rounded-lg font-medium shadow-md w-full md:w-auto"
+                  class="btn-primary text-white px-6 py-3 sm:px-8 sm:py-3 rounded-lg font-medium shadow-md w-full sm:w-auto text-sm sm:text-base"
                 >
                   Send Message
                 </button>
@@ -937,19 +1233,17 @@
     </div>
 
     <!-- Fixed Footer -->
-    <footer
-      class="fixed bottom-0 w-full bg-gray-900 bg-opacity-70 py-4 border-t border-gray-800"
-    >
-      <div class="container mx-auto px-6">
+    <footer class="bg-gray-900 bg-opacity-70 py-4 border-t border-gray-800">
+      <div class="container mx-auto px-4 sm:px-6">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="mb-2 md:mb-0">
+          <div class="mb-4 md:mb-0 text-center md:text-left">
             <div class="text-xl font-bold gradient-text">Aster Hayle</div>
             <div class="text-gray-400 text-sm">
               Executive Secretary and Implementer
             </div>
           </div>
 
-          <div class="flex space-x-6">
+          <div class="flex space-x-6 mb-4 md:mb-0">
             <a
               href="#"
               class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
@@ -978,7 +1272,7 @@
         </div>
 
         <div
-          class="border-t border-gray-800 mt-3 pt-3 text-center text-gray-400 text-sm"
+          class="border-t border-gray-800 mt-4 pt-4 text-center text-gray-400 text-sm"
         >
           <p>&copy; 2023 Aster Hayle. All rights reserved.</p>
         </div>
@@ -994,6 +1288,21 @@
 
         mobileMenuButton.addEventListener("click", function () {
           mobileMenu.classList.toggle("hidden");
+          // Add animation class for mobile menu
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("mobile-menu-open");
+          } else {
+            mobileMenu.classList.remove("mobile-menu-open");
+          }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll("#mobile-menu .nav-item");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+            mobileMenu.classList.remove("mobile-menu-open");
+          });
         });
 
         // Navigation between sections
@@ -1020,9 +1329,15 @@
 
           // Hide mobile menu if open
           mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("mobile-menu-open");
 
           // Update URL hash
           window.location.hash = targetId;
+
+          // Scroll to top on mobile when switching sections
+          if (window.innerWidth < 768) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
         }
 
         // Add click event to nav items
@@ -1058,6 +1373,15 @@
           viewPortfolioBtn.addEventListener("click", function (e) {
             e.preventDefault();
             switchSection("portfolio");
+          });
+        }
+
+        // Add click event to "Hire Me" button
+        const hireMeBtn = document.querySelector(".btn-primary");
+        if (hireMeBtn && !hireMeBtn.getAttribute("data-target")) {
+          hireMeBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            switchSection("contact");
           });
         }
       });
@@ -1108,4 +1432,3 @@
     </script>
   </body>
 </html>
-
