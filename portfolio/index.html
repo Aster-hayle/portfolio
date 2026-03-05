@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aster Hayle - Executive Secretary and Implementer</title>
+    <title>Aster Hayle – Executive Secretary & Implementer</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -301,7 +301,6 @@
         box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
       }
 
-      /* Center alignment classes */
       .center-content {
         display: flex;
         flex-direction: column;
@@ -314,15 +313,6 @@
         text-align: center !important;
       }
 
-      .center-items {
-        align-items: center !important;
-      }
-
-      .justify-center-items {
-        justify-content: center !important;
-      }
-
-      /* Smooth Typewriter Animation Container */
       .typewriter-container {
         display: inline-block;
         position: relative;
@@ -363,7 +353,6 @@
         }
       }
 
-      /* For responsive typewriter */
       @media (max-width: 768px) {
         .smooth-typewriter {
           font-size: 2rem;
@@ -371,233 +360,27 @@
         .typewriter-container {
           min-height: 60px;
         }
-      }
-
-      @media (max-width: 480px) {
-        .smooth-typewriter {
-          font-size: 1.75rem;
-        }
-        .typewriter-container {
-          min-height: 50px;
-        }
-      }
-
-      /* Mobile-specific optimizations */
-      @media (max-width: 768px) {
         .main-content {
           padding-top: 70px;
           padding-bottom: 120px;
         }
-
-        nav .container {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-
-        .text-5xl {
-          font-size: 2.5rem;
-        }
-
-        .text-6xl {
-          font-size: 3rem;
-        }
-
-        .text-7xl {
-          font-size: 3.5rem;
-        }
-
-        .text-4xl {
-          font-size: 2rem;
-        }
-
-        .text-3xl {
-          font-size: 1.75rem;
-        }
-
-        .text-2xl {
-          font-size: 1.5rem;
-        }
-
-        .text-xl {
-          font-size: 1.25rem;
-        }
-
-        .text-lg {
-          font-size: 1.125rem;
-        }
-
-        .section-title::after {
-          width: 80%;
-          left: 10%;
-        }
-
-        .experience-badge {
-          transform: scale(0.8);
-          right: -1rem;
-          bottom: -1rem;
-        }
-
-        .profile-img {
-          width: 200px;
-          height: 200px;
-        }
-
-        .py-32 {
-          padding-top: 4rem;
-          padding-bottom: 4rem;
-        }
-
-        .pl-12 {
-          padding-left: 0;
-        }
-
-        .md\:pl-12 {
-          padding-left: 0;
-        }
-
-        .grid-cols-4 {
-          grid-template-columns: repeat(1, 1fr);
-        }
-
-        .grid-cols-3 {
-          grid-template-columns: repeat(1, 1fr);
-        }
-
-        .grid-cols-2 {
-          grid-template-columns: repeat(1, 1fr);
-        }
-
-        .skill-card {
-          margin-bottom: 1rem;
-        }
-
-        .portfolio-item {
-          margin-bottom: 1.5rem;
-        }
-
-        .timeline-item {
-          padding-left: 1.5rem;
-          margin-bottom: 1.5rem;
-          text-align: left;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          padding: 0.75rem 1.5rem;
-          font-size: 0.875rem;
-        }
-
-        footer {
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          position: relative;
-        }
-
-        .mobile-menu-open {
-          display: block !important;
-        }
-
-        .portfolio-overlay {
-          padding: 1rem;
-        }
-
-        .portfolio-overlay h3 {
-          font-size: 1.125rem;
-        }
-
-        .portfolio-overlay p {
-          font-size: 0.875rem;
-        }
-
-        .contact-input {
-          font-size: 16px; /* Prevents zoom on iOS */
-        }
-
-        .timeline-container {
-          width: 100%;
-          max-width: 100%;
-        }
-
-        /* Mobile navigation specific fixes */
         #mobile-menu {
           position: absolute;
           top: 100%;
           left: 0;
           width: 100%;
-          z-index: 1000;
           background: rgba(15, 23, 42, 0.95);
           backdrop-filter: blur(10px);
         }
-
         .mobile-nav-link {
           padding: 0.75rem 1rem;
           text-align: center;
           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .mobile-nav-link:last-child {
-          border-bottom: none;
-        }
-      }
-
-      @media (max-width: 640px) {
-        .profile-img {
-          width: 180px;
-          height: 180px;
-        }
-
-        .text-5xl {
-          font-size: 2.25rem;
-        }
-
-        .text-6xl {
-          font-size: 2.5rem;
-        }
-
-        .py-32 {
-          padding-top: 3rem;
-          padding-bottom: 3rem;
-        }
-
-        .flex.flex-col.md\:flex-row {
-          flex-direction: column;
-        }
-
-        .md\:w-1\/2,
-        .md\:w-2\/5,
-        .md\:w-3\/5 {
-          width: 100%;
-        }
-
-        .experience-badge {
-          transform: scale(0.7);
-          right: -0.5rem;
-          bottom: -0.5rem;
-        }
-
-        .timeline-item {
-          text-align: left;
-        }
-      }
-
-      @media (min-width: 769px) and (max-width: 1024px) {
-        .grid-cols-4 {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .grid-cols-3 {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .profile-img {
-          width: 240px;
-          height: 240px;
-        }
       }
     </style>
   </head>
   <body>
-    <!-- Background -->
     <div class="gradient-bg"></div>
 
     <!-- Fixed Navigation -->
@@ -610,7 +393,6 @@
         >
           Aster Hayle
         </div>
-
         <div class="hidden md:flex space-x-6 lg:space-x-8 mx-auto">
           <a
             href="#home"
@@ -649,25 +431,21 @@
             >Contact</a
           >
         </div>
-
         <div class="flex items-center space-x-4 ml-auto">
           <a
             href="cv.pdf"
             download
             data-download="cv.pdf"
             class="btn-primary text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg flex items-center shadow-md text-sm sm:text-base"
+            ><i class="fas fa-download mr-2"></i
+            ><span class="hidden sm:inline">Download CV</span
+            ><span class="sm:hidden">CV</span></a
           >
-            <i class="fas fa-download mr-2"></i>
-            <span class="hidden sm:inline">Download CV</span>
-            <span class="sm:hidden">CV</span>
-          </a>
-          <!-- Mobile menu button -->
           <button class="md:hidden text-gray-300 ml-2" id="mobile-menu-button">
             <i class="fas fa-bars text-xl"></i>
           </button>
         </div>
       </div>
-
       <!-- Mobile Menu -->
       <div
         class="md:hidden hidden bg-gray-900 py-3 text-center"
@@ -714,7 +492,7 @@
       </div>
     </nav>
 
-    <!-- Main Content Area -->
+    <!-- Main Content -->
     <div class="main-content">
       <!-- Home Section -->
       <section
@@ -724,7 +502,6 @@
         <div
           class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-center"
         >
-          <!-- Text Content - Now on Left Side -->
           <div
             class="md:w-1/2 mb-8 md:mb-0 order-2 md:order-1 center-text mt-8 md:mt-0 md:pr-6 lg:pr-12"
           >
@@ -733,15 +510,12 @@
             >
               Hello, I'm
             </div>
-
-            <!-- Smooth Typewriter Animation -->
             <div class="typewriter-container mb-3 sm:mb-4">
               <h1 class="smooth-typewriter" id="dynamic-name">
-                <span class="typewriter-gradient"></span>
-                <span class="typewriter-cursor"></span>
+                <span class="typewriter-gradient"></span
+                ><span class="typewriter-cursor"></span>
               </h1>
             </div>
-
             <h2
               class="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-4 sm:mb-6 center-text"
             >
@@ -757,7 +531,6 @@
               include secretarial work, correspondence, filing, processing
               administrative tasks, and handling income tax.
             </p>
-
             <div
               class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center items-center"
             >
@@ -774,25 +547,19 @@
               </button>
             </div>
           </div>
-
-          <!-- Profile Image - Now on Right Side -->
           <div
             class="md:w-1/2 flex justify-center relative mb-8 md:mb-0 order-1 md:order-2"
           >
             <div class="relative floating center-content">
-              <!-- Square profile image -->
               <div
                 class="profile-img w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 square-profile overflow-hidden shadow-xl mx-auto"
               >
-                <!-- Profile image -->
                 <img
                   src="miki.png"
                   alt="Aster Hayle"
                   class="w-full h-full object-cover"
                 />
               </div>
-
-              <!-- Experience Badge -->
               <div
                 class="experience-badge absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 rounded-xl p-3 sm:p-4"
               >
@@ -808,23 +575,28 @@
         </div>
       </section>
 
-     <!-- About Section -->
-      <section id="about" class="section py-16 sm:py-24 md:py-32 center-content">
+      <!-- About Section -->
+      <section
+        id="about"
+        class="section py-16 sm:py-24 md:py-32 center-content"
+      >
         <div class="container mx-auto px-4 sm:px-6">
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 section-title center-text">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 section-title center-text"
+          >
             About Me
           </h2>
-          <p class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base center-text">
-            Executive Secretary and Implementer with expertise in administrative management and tax-related tasks
+          <p
+            class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base center-text"
+          >
+            Executive Secretary and Implementer with expertise in administrative
+            management and tax-related tasks
           </p>
-
           <div class="flex flex-col md:flex-row items-center justify-center">
-            <!-- Profile Image -->
             <div class="md:w-2/5 flex justify-center mb-6 sm:mb-8 md:mb-0">
               <div
                 class="profile-img w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 square-profile overflow-hidden shadow-xl"
               >
-                <!-- Profile image -->
                 <img
                   src="miki.png"
                   alt="Aster Hayle"
@@ -832,58 +604,82 @@
                 />
               </div>
             </div>
-
-            <!-- Text Content -->
             <div class="md:w-3/5 md:pl-6 lg:pl-12 center-text">
-              <h3 class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 gradient-text center-text">
+              <h3
+                class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 gradient-text center-text"
+              >
                 Executive Secretary and Implementer
               </h3>
-              <p class="text-gray-400 mb-6 sm:mb-8 text-base sm:text-lg mx-auto center-text">
-                My role is that of an Executive Secretary and Implementer. I am responsible for secretarial duties, managing correspondence, filing documents, and processing administrative matters. I also handle income tax-related tasks.
+              <p
+                class="text-gray-400 mb-6 sm:mb-8 text-base sm:text-lg mx-auto center-text"
+              >
+                My role is that of an Executive Secretary and Implementer. I am
+                responsible for secretarial duties, managing correspondence,
+                filing documents, and processing administrative matters. I also
+                handle income tax-related tasks.
               </p>
-
               <div class="mb-6 sm:mb-8 timeline-container">
-                <h4 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 center-text">My Experience</h4>
+                <h4
+                  class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 center-text"
+                >
+                  My Experience
+                </h4>
                 <div class="space-y-3 sm:space-y-4 mx-auto max-w-3xl">
                   <div class="timeline-item">
-                    <h5 class="font-medium text-base sm:text-lg center-text">Executive Secretary and Implementer</h5>
-                    <p class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2 center-text">
+                    <h5 class="font-medium text-base sm:text-lg center-text">
+                      Executive Secretary and Implementer
+                    </h5>
+                    <p
+                      class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2 center-text"
+                    >
                       Corporate Solutions Inc. • 2020 - Present
                     </p>
                     <p class="text-gray-400 text-sm center-text">
-                      Managed executive correspondence, organized filing systems, processed administrative documents, and handled income tax preparation and filing for the organization.
+                      Managed executive correspondence, organized filing
+                      systems, processed administrative documents, and handled
+                      income tax preparation.
                     </p>
                   </div>
                   <div class="timeline-item">
-                    <h5 class="font-medium text-base sm:text-lg center-text">Administrative Specialist</h5>
-                    <p class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2 center-text">
+                    <h5 class="font-medium text-base sm:text-lg center-text">
+                      Administrative Specialist
+                    </h5>
+                    <p
+                      class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2 center-text"
+                    >
                       Financial Services Group • 2018 - 2020
                     </p>
                     <p class="text-gray-400 text-sm center-text">
-                      Provided comprehensive administrative support including document management, correspondence handling, and tax documentation preparation for multiple departments.
+                      Provided administrative support including document
+                      management, correspondence handling, and tax
+                      documentation.
                     </p>
                   </div>
                   <div class="timeline-item">
-                    <h5 class="font-medium text-base sm:text-lg center-text">Office Administrator</h5>
-                    <p class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2 center-text">
+                    <h5 class="font-medium text-base sm:text-lg center-text">
+                      Office Administrator
+                    </h5>
+                    <p
+                      class="text-indigo-400 text-xs sm:text-sm mb-1 sm:mb-2 center-text"
+                    >
                       Business Consulting Firm • 2016 - 2018
                     </p>
                     <p class="text-gray-400 text-sm center-text">
-                      Handled general office administration, client correspondence, scheduling, and basic financial documentation support.
+                      Handled general office administration, client
+                      correspondence, scheduling, and basic financial
+                      documentation.
                     </p>
                   </div>
                 </div>
               </div>
-
               <div class="center-content">
                 <a
                   href="cv.pdf"
                   download
                   data-download="cv.pdf"
                   class="btn-primary text-white px-6 py-3 rounded-lg flex items-center shadow-md text-sm sm:text-base mx-auto"
+                  ><i class="fas fa-download mr-2"></i> Download CV</a
                 >
-                  <i class="fas fa-download mr-2"></i> Download CV
-                </a>
               </div>
             </div>
           </div>
@@ -907,11 +703,9 @@
             Specialized in administrative management, documentation, and
             tax-related tasks
           </p>
-
           <div
             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center"
           >
-            <!-- Skill 1 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -926,12 +720,9 @@
                 Document Management
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Expert in filing, organizing, and maintaining document systems
-                with precision and confidentiality.
+                Expert in filing, organizing, and maintaining document systems.
               </p>
             </div>
-
-            <!-- Skill 2 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -943,15 +734,13 @@
                 ></i>
               </div>
               <h3 class="text-lg sm:text-xl font-semibold mb-2 center-text">
-                Correspondence Management
+                Correspondence
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
                 Professional handling of emails, letters, and official
-                communications with attention to detail.
+                communications.
               </p>
             </div>
-
-            <!-- Skill 3 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -966,12 +755,9 @@
                 Income Tax Processing
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Skilled in preparing, processing, and filing income tax
-                documents and related financial paperwork.
+                Skilled in preparing and filing income tax documents.
               </p>
             </div>
-
-            <!-- Skill 4 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -981,15 +767,12 @@
                 <i class="fas fa-tasks text-indigo-400 text-xl sm:text-2xl"></i>
               </div>
               <h3 class="text-lg sm:text-xl font-semibold mb-2 center-text">
-                Administrative Processing
+                Admin Processing
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Efficient processing of administrative matters including
-                scheduling, reporting, and office management.
+                Efficient processing of administrative matters and reporting.
               </p>
             </div>
-
-            <!-- Skill 5 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1004,12 +787,9 @@
                 Schedule Management
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Organizing and maintaining executive schedules, appointments,
-                and meeting coordination.
+                Organizing executive schedules and meeting coordination.
               </p>
             </div>
-
-            <!-- Skill 6 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1024,12 +804,9 @@
                 Record Keeping
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Maintaining accurate records, databases, and filing systems for
-                efficient information retrieval.
+                Maintaining accurate records and filing systems.
               </p>
             </div>
-
-            <!-- Skill 7 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1042,12 +819,9 @@
                 Client Relations
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Professional communication and relationship management with
-                clients and stakeholders.
+                Professional communication with clients and stakeholders.
               </p>
             </div>
-
-            <!-- Skill 8 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1062,8 +836,7 @@
                 Office Software
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Proficient in Microsoft Office Suite, document processing
-                software, and administrative tools.
+                Proficient in MS Office and administrative tools.
               </p>
             </div>
           </div>
@@ -1084,13 +857,11 @@
           <p
             class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base center-text"
           >
-            Comprehensive administrative and secretarial support services
+            Comprehensive administrative and secretarial support
           </p>
-
           <div
             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center"
           >
-            <!-- Service 1 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1102,15 +873,12 @@
                 ></i>
               </div>
               <h3 class="text-lg sm:text-xl font-semibold mb-2 center-text">
-                Executive Secretarial Support
+                Executive Secretarial
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Comprehensive secretarial duties including correspondence
-                management, scheduling, and executive support.
+                Correspondence, scheduling, and executive support.
               </p>
             </div>
-
-            <!-- Service 2 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1125,12 +893,9 @@
                 Document Processing
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Professional filing, organization, and management of documents
-                and records with confidentiality.
+                Filing, organizing, and managing records.
               </p>
             </div>
-
-            <!-- Service 3 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1142,15 +907,12 @@
                 ></i>
               </div>
               <h3 class="text-lg sm:text-xl font-semibold mb-2 center-text">
-                Administrative Implementation
+                Admin Implementation
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Effective implementation of administrative processes and office
-                management systems.
+                Effective office management systems.
               </p>
             </div>
-
-            <!-- Service 4 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1165,12 +927,9 @@
                 Tax Documentation
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Preparation, processing, and management of income tax documents
-                and related financial paperwork.
+                Preparation and management of income tax paperwork.
               </p>
             </div>
-
-            <!-- Service 5 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1185,12 +944,9 @@
                 Meeting Coordination
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Organization and coordination of meetings, appointments, and
-                executive schedules.
+                Appointment and executive schedule organization.
               </p>
             </div>
-
-            <!-- Service 6 -->
             <div
               class="skill-card p-4 sm:p-6 rounded-xl shadow-sm w-full max-w-sm"
             >
@@ -1205,8 +961,7 @@
                 Office Management
               </h3>
               <p class="text-gray-400 text-sm sm:text-base center-text">
-                Efficient office operations management including supplies,
-                equipment, and workflow coordination.
+                Supplies, equipment, and workflow coordination.
               </p>
             </div>
           </div>
@@ -1227,13 +982,11 @@
           <p
             class="text-gray-400 text-center max-w-2xl mx-auto mb-8 sm:mb-12 text-sm sm:text-base center-text"
           >
-            A selection of my administrative projects and accomplishments
+            A selection of administrative projects
           </p>
-
           <div
             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-items-center"
           >
-            <!-- Portfolio Item 1 -->
             <div
               class="portfolio-item rounded-xl overflow-hidden shadow-sm w-full max-w-sm"
             >
@@ -1249,17 +1002,14 @@
                 <p
                   class="text-gray-300 mb-3 sm:mb-4 text-center text-sm sm:text-base center-text"
                 >
-                  Implemented a comprehensive document filing and retrieval
-                  system that improved efficiency by 40%.
+                  Improved filing efficiency by 40%.
                 </p>
                 <span
                   class="text-indigo-400 font-medium text-sm sm:text-base center-text"
-                  >Administrative Project</span
+                  >Admin Project</span
                 >
               </div>
             </div>
-
-            <!-- Portfolio Item 2 -->
             <div
               class="portfolio-item rounded-xl overflow-hidden shadow-sm w-full max-w-sm"
             >
@@ -1275,8 +1025,7 @@
                 <p
                   class="text-gray-300 mb-3 sm:mb-4 text-center text-sm sm:text-base center-text"
                 >
-                  Developed and implemented an efficient income tax document
-                  processing system for corporate clients.
+                  Streamlined income tax document processing.
                 </p>
                 <span
                   class="text-indigo-400 font-medium text-sm sm:text-base center-text"
@@ -1284,8 +1033,6 @@
                 >
               </div>
             </div>
-
-            <!-- Portfolio Item 3 -->
             <div
               class="portfolio-item rounded-xl overflow-hidden shadow-sm w-full max-w-sm"
             >
@@ -1296,13 +1043,12 @@
                 <h3
                   class="text-lg sm:text-xl font-semibold mb-2 text-white center-text"
                 >
-                  Executive Correspondence System
+                  Executive Correspondence
                 </h3>
                 <p
                   class="text-gray-300 mb-3 sm:mb-4 text-center text-sm sm:text-base center-text"
                 >
-                  Created an organized correspondence management system that
-                  streamlined executive communication.
+                  System that streamlined communication.
                 </p>
                 <span
                   class="text-indigo-400 font-medium text-sm sm:text-base center-text"
@@ -1314,7 +1060,7 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
+      <!-- CONTACT SECTION – MODIFIED: two columns + Ethiopian phone -->
       <section
         id="contact"
         class="section py-16 sm:py-24 md:py-32 center-content"
@@ -1331,442 +1077,331 @@
             Let's discuss how I can support your administrative needs
           </p>
 
-          <div class="max-w-3xl mx-auto">
+          <div class="max-w-5xl mx-auto">
             <div class="skill-card p-6 sm:p-8 rounded-xl shadow-sm">
-              <form class="space-y-4 sm:space-y-6">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                  <div>
-                    <label
-                      class="block text-gray-300 mb-2 text-sm sm:text-base center-text"
-                      >Name</label
-                    >
-                    <input
-                      type="text"
-                      class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
-                      placeholder="Your Name"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      class="block text-gray-300 mb-2 text-sm sm:text-base center-text"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
-                      placeholder="Your Email"
-                    />
-                  </div>
-                </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <!-- LEFT: CONTACT FORM -->
                 <div>
-                  <label
-                    class="block text-gray-300 mb-2 text-sm sm:text-base center-text"
-                    >Subject</label
-                  >
-                  <input
-                    type="text"
-                    class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
-                    placeholder="Subject"
-                  />
+                  <form class="space-y-4 sm:space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label
+                          class="block text-gray-300 mb-2 text-sm sm:text-base text-left"
+                          >First Name</label
+                        >
+                        <input
+                          type="text"
+                          class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          class="block text-gray-300 mb-2 text-sm sm:text-base text-left"
+                          >Last Name</label
+                        >
+                        <input
+                          type="text"
+                          class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        class="block text-gray-300 mb-2 text-sm sm:text-base text-left"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
+                        placeholder="Your Email"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-gray-300 mb-2 text-sm sm:text-base text-left"
+                        >Message</label
+                      >
+                      <textarea
+                        rows="4"
+                        class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
+                        placeholder="Your Message"
+                      ></textarea>
+                    </div>
+                    <div class="text-left">
+                      <button
+                        type="submit"
+                        class="btn-primary text-white px-8 py-3 rounded-lg font-medium shadow-md text-sm sm:text-base"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
                 </div>
-                <div>
-                  <label
-                    class="block text-gray-300 mb-2 text-sm sm:text-base center-text"
-                    >Message</label
-                  >
-                  <textarea
-                    rows="4"
-                    class="w-full contact-input rounded-lg px-4 py-3 focus:outline-none text-sm sm:text-base"
-                    placeholder="Your Message"
-                  ></textarea>
+
+                <!-- RIGHT: GET IN TOUGH + EMAIL + ETHIOPIAN PHONE -->
+                <div
+                  class="flex flex-col items-start md:items-start text-left space-y-5"
+                >
+                  <h3 class="text-2xl font-bold gradient-text">Get in Touch</h3>
+                  <p class="text-gray-200 text-lg">
+                    I'd like to hear from you!
+                  </p>
+                  <p class="text-gray-400 text-sm leading-relaxed">
+                    If you have any inquiries or just want to<br />say hi,
+                    please use the contact form!
+                  </p>
+                  <!-- Email (from image) -->
+                  <div class="flex items-center space-x-3 pt-2">
+                    <i class="fas fa-envelope text-indigo-400 text-xl"></i>
+                    <span class="text-gray-300 text-base break-all"
+                      >aster.haile@gmail.com</span
+                    >
+                  </div>
+                  <!-- Ethiopian phone number (new) -->
+                  <div class="flex items-center space-x-3">
+                    <i class="fas fa-phone-alt text-indigo-400 text-xl"></i>
+                    <span class="text-gray-300 text-base"
+                      >+251 93 081 5444</span
+                    >
+                  </div>
+                  <!-- subtle WIX hint (optional) -->
+                  <div class="pt-6 text-xs text-gray-500 flex items-center">
+                    <i class="fab fa-wix mr-1"></i>
+                    <span class="italic">WIX</span>
+                  </div>
                 </div>
-                <div class="center-content">
-                  <button
-                    type="submit"
-                    class="btn-primary text-white px-6 py-3 sm:px-8 sm:py-3 rounded-lg font-medium shadow-md w-full sm:w-auto text-sm sm:text-base"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- END CONTACT SECTION -->
     </div>
 
-    <!-- Fixed Footer -->
+    <!-- Footer -->
     <footer class="bg-gray-900 bg-opacity-70 py-4 border-t border-gray-800">
-  <div class="container mx-auto px-4 sm:px-6">
-    <!-- Main content - fully centered -->
-    <div class="flex flex-col justify-center items-center">
-      <!-- Name and title section -->
-      <div class="text-center mb-6">
-        <div class="text-xl font-bold gradient-text">
-          Aster Hayle
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col justify-center items-center">
+          <div class="text-center mb-6">
+            <div class="text-xl font-bold gradient-text">Aster Hayle</div>
+            <div class="text-gray-400 text-sm mt-1">
+              Executive Secretary and Implementer
+            </div>
+          </div>
+          <div class="flex space-x-6 justify-center mb-6">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
+              ><i class="fab fa-linkedin text-lg"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
+              ><i class="fas fa-envelope text-lg"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
+              ><i class="fab fa-twitter text-lg"></i
+            ></a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
+              ><i class="fab fa-facebook text-lg"></i
+            ></a>
+          </div>
         </div>
-        <div class="text-gray-400 text-sm mt-1">
-          Executive Secretary and Implementer
+        <div class="border-t border-gray-800 mt-4 pt-4 text-center">
+          <p class="text-gray-400 text-sm">
+            &copy; 2023 Aster Hayle. All rights reserved.
+          </p>
         </div>
       </div>
-
-      <!-- Social icons - centered -->
-      <div class="flex space-x-6 justify-center mb-6">
-        <a
-          href="#"
-          class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
-        >
-          <i class="fab fa-linkedin text-lg"></i>
-        </a>
-        <a
-          href="#"
-          class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
-        >
-          <i class="fas fa-envelope text-lg"></i>
-        </a>
-        <a
-          href="#"
-          class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
-        >
-          <i class="fab fa-twitter text-lg"></i>
-        </a>
-        <a
-          href="#"
-          class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110"
-        >
-          <i class="fab fa-facebook text-lg"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Copyright section -->
-    <div class="border-t border-gray-800 mt-4 pt-4 text-center">
-      <p class="text-gray-400 text-sm">
-        &copy; 2023 Aster Hayle. All rights reserved.
-      </p>
-    </div>
-  </div>
-</footer>
+    </footer>
 
     <script>
-      // Navigation functionality
       document.addEventListener("DOMContentLoaded", function () {
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById("mobile-menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
-
         mobileMenuButton.addEventListener("click", function () {
           mobileMenu.classList.toggle("hidden");
-          // Add animation class for mobile menu
-          if (!mobileMenu.classList.contains("hidden")) {
+          if (!mobileMenu.classList.contains("hidden"))
             mobileMenu.classList.add("mobile-menu-open");
-          } else {
-            mobileMenu.classList.remove("mobile-menu-open");
-          }
+          else mobileMenu.classList.remove("mobile-menu-open");
         });
 
-        // Close mobile menu when clicking on a link
         const mobileLinks = document.querySelectorAll("#mobile-menu .nav-item");
         mobileLinks.forEach((link) => {
-          link.addEventListener("click", function () {
+          link.addEventListener("click", () => {
             mobileMenu.classList.add("hidden");
             mobileMenu.classList.remove("mobile-menu-open");
           });
         });
 
-        // Navigation between sections
+        // Section switching
         const navItems = document.querySelectorAll(".nav-item");
         const sections = document.querySelectorAll(".section");
-
-        // Function to switch section
         function switchSection(targetId) {
-          // Update active nav item
           navItems.forEach((nav) => {
             nav.classList.remove("active-nav");
-            if (nav.getAttribute("data-target") === targetId) {
+            if (nav.getAttribute("data-target") === targetId)
               nav.classList.add("active-nav");
-            }
           });
-
-          // Show target section
           sections.forEach((section) => {
             section.classList.remove("active");
-            if (section.id === targetId) {
-              section.classList.add("active");
-            }
+            if (section.id === targetId) section.classList.add("active");
           });
-
-          // Hide mobile menu if open
           mobileMenu.classList.add("hidden");
           mobileMenu.classList.remove("mobile-menu-open");
-
-          // Update URL hash
           window.location.hash = targetId;
-
-          // Scroll to top on mobile when switching sections
-          if (window.innerWidth < 768) {
+          if (window.innerWidth < 768)
             window.scrollTo({ top: 0, behavior: "smooth" });
-          }
         }
-
-        // Add click event to nav items
         navItems.forEach((item) => {
           item.addEventListener("click", function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute("data-target");
-            switchSection(targetId);
+            switchSection(this.getAttribute("data-target"));
           });
         });
-
-        // Handle URL hash changes
-        window.addEventListener("hashchange", function () {
-          const hash = window.location.hash.substring(1);
-          if (hash) {
-            switchSection(hash);
-          }
+        window.addEventListener("hashchange", () => {
+          const hash = location.hash.substring(1);
+          if (hash) switchSection(hash);
         });
+        if (window.location.hash)
+          switchSection(window.location.hash.substring(1));
+        else switchSection("home");
 
-        // Initialize with home section active
-        if (window.location.hash) {
-          const hash = window.location.hash.substring(1);
-          switchSection(hash);
-        } else {
-          switchSection("home");
-        }
-
-        // Add click event to "View Portfolio" button in home section
-        const viewPortfolioBtn = document.querySelector(
-          '.btn-outline[data-target="portfolio"]',
-        );
-        if (viewPortfolioBtn) {
-          viewPortfolioBtn.addEventListener("click", function (e) {
+        // Buttons
+        document
+          .querySelector('.btn-outline[data-target="portfolio"]')
+          ?.addEventListener("click", (e) => {
             e.preventDefault();
             switchSection("portfolio");
           });
-        }
-
-        // Add click event to "Hire Me" button
-        const hireMeBtn = document.querySelector(".btn-primary");
-        if (hireMeBtn && !hireMeBtn.getAttribute("data-target")) {
-          hireMeBtn.addEventListener("click", function (e) {
+        document
+          .querySelector(".btn-primary")
+          ?.addEventListener("click", (e) => {
             e.preventDefault();
             switchSection("contact");
           });
-        }
 
-        // Fix mobile navigation issues
-        function fixMobileNavigation() {
-          // Close mobile menu when clicking outside
-          document.addEventListener("click", function (event) {
-            const isClickInside =
-              mobileMenu.contains(event.target) ||
-              mobileMenuButton.contains(event.target);
-            if (!isClickInside && !mobileMenu.classList.contains("hidden")) {
-              mobileMenu.classList.add("hidden");
-              mobileMenu.classList.remove("mobile-menu-open");
-            }
-          });
-
-          // Prevent body scroll when mobile menu is open
-          mobileMenuButton.addEventListener("click", function () {
-            if (!mobileMenu.classList.contains("hidden")) {
-              document.body.style.overflow = "hidden";
-            } else {
-              document.body.style.overflow = "auto";
-            }
-          });
-
-          // Restore scroll when menu closes
-          mobileLinks.forEach((link) => {
-            link.addEventListener("click", function () {
-              document.body.style.overflow = "auto";
-            });
-          });
-        }
-
-        fixMobileNavigation();
-
-        // Smooth Typewriter Animation with Delays
+        // Typewriter
         class SmoothTypewriter {
-          constructor(elementId, texts, options = {}) {
-            this.element = document.getElementById(elementId);
+          constructor(id, texts, opts) {
+            this.el = document.getElementById(id);
             this.texts = texts;
-            this.options = {
-              typingSpeed: options.typingSpeed || 80,
-              deletingSpeed: options.deletingSpeed || 40,
-              pauseBeforeDelete: options.pauseBeforeDelete || 2000,
-              pauseBetweenTexts: options.pauseBetweenTexts || 500,
-              ...options,
+            this.opts = {
+              typingSpeed: 80,
+              deletingSpeed: 40,
+              pauseBeforeDelete: 2000,
+              pauseBetweenTexts: 800,
+              ...opts,
             };
-
-            this.currentTextIndex = 0;
-            this.currentCharIndex = 0;
-            this.isDeleting = false;
-            this.isTyping = false;
+            this.idx = 0;
+            this.char = 0;
+            this.deleting = false;
             this.timeout = null;
-
-            this.init();
-          }
-
-          init() {
             this.type();
           }
-
           type() {
-            const currentText = this.texts[this.currentTextIndex];
-            const textSpan = this.element.querySelector(".typewriter-gradient");
-
-            if (!this.isDeleting) {
-              // Typing phase
-              textSpan.textContent = currentText.substring(
-                0,
-                this.currentCharIndex + 1,
-              );
-              this.currentCharIndex++;
-
-              // If typing is complete
-              if (this.currentCharIndex === currentText.length) {
-                // Pause before deleting
+            const txt = this.texts[this.idx];
+            const span = this.el.querySelector(".typewriter-gradient");
+            if (!this.deleting) {
+              span.textContent = txt.substring(0, this.char + 1);
+              this.char++;
+              if (this.char === txt.length) {
                 this.timeout = setTimeout(() => {
-                  this.isDeleting = true;
+                  this.deleting = true;
                   this.type();
-                }, this.options.pauseBeforeDelete);
+                }, this.opts.pauseBeforeDelete);
                 return;
               }
             } else {
-              // Deleting phase
-              textSpan.textContent = currentText.substring(
-                0,
-                this.currentCharIndex - 1,
-              );
-              this.currentCharIndex--;
-
-              // If deleting is complete
-              if (this.currentCharIndex === 0) {
-                this.isDeleting = false;
-                this.currentTextIndex =
-                  (this.currentTextIndex + 1) % this.texts.length;
-
-                // Pause before typing next text
-                this.timeout = setTimeout(() => {
-                  this.type();
-                }, this.options.pauseBetweenTexts);
+              span.textContent = txt.substring(0, this.char - 1);
+              this.char--;
+              if (this.char === 0) {
+                this.deleting = false;
+                this.idx = (this.idx + 1) % this.texts.length;
+                this.timeout = setTimeout(
+                  () => this.type(),
+                  this.opts.pauseBetweenTexts,
+                );
                 return;
               }
             }
-
-            // Calculate speed based on current operation
-            const speed = this.isDeleting
-              ? this.options.deletingSpeed
-              : this.options.typingSpeed;
-
-            // Add some randomness to make it feel more natural
-            const randomSpeed = speed * (0.7 + Math.random() * 0.6);
-
-            this.timeout = setTimeout(() => this.type(), randomSpeed);
+            const speed = this.deleting
+              ? this.opts.deletingSpeed
+              : this.opts.typingSpeed;
+            this.timeout = setTimeout(
+              () => this.type(),
+              speed * (0.7 + Math.random() * 0.6),
+            );
           }
-
           pause() {
-            if (this.timeout) {
-              clearTimeout(this.timeout);
-            }
+            if (this.timeout) clearTimeout(this.timeout);
           }
-
-          resume() {
-            if (!this.isTyping) {
-              this.type();
-            }
-          }
-
           restart() {
             this.pause();
-            this.currentTextIndex = 0;
-            this.currentCharIndex = 0;
-            this.isDeleting = false;
-            this.element.querySelector(".typewriter-gradient").textContent = "";
+            this.idx = 0;
+            this.char = 0;
+            this.deleting = false;
+            this.el.querySelector(".typewriter-gradient").textContent = "";
             setTimeout(() => this.type(), 1000);
           }
         }
-
-        // Initialize the smooth typewriter animation
-        const typewriter = new SmoothTypewriter(
-          "dynamic-name",
-          [
-            "Aster Hayle",
-            "Executive Secretary",
-            "Tax Specialist",
-            "Administrative Expert",
-          ],
-          {
-            typingSpeed: 80, // ms per character while typing
-            deletingSpeed: 40, // ms per character while deleting
-            pauseBeforeDelete: 2000, // ms to pause before starting to delete
-            pauseBetweenTexts: 800, // ms to pause before typing next text
-          },
-        );
-
-        // Restart animation when returning to home section
-        const homeSection = document.getElementById("home");
-        const observer = new MutationObserver(function (mutations) {
-          mutations.forEach(function (mutation) {
-            if (mutation.attributeName === "class") {
-              if (homeSection.classList.contains("active")) {
-                // Small delay to ensure section is visible
-                setTimeout(() => {
-                  typewriter.restart();
-                }, 300);
-              } else {
-                typewriter.pause();
-              }
-            }
+        const tw = new SmoothTypewriter("dynamic-name", [
+          "Aster Hayle",
+          "Executive Secretary",
+          "Tax Specialist",
+          "Administrative Expert",
+        ]);
+        const homeSec = document.getElementById("home");
+        new MutationObserver((muts) => {
+          muts.forEach((m) => {
+            if (m.attributeName === "class")
+              homeSec.classList.contains("active")
+                ? setTimeout(() => tw.restart(), 300)
+                : tw.pause();
           });
+        }).observe(homeSec, { attributes: true });
+
+        // Download handler
+        document.addEventListener("click", async function (e) {
+          const el = e.target.closest("[data-download]");
+          if (!el) return;
+          const url =
+            el.getAttribute("data-download") || el.getAttribute("href");
+          if (!url) return;
+          e.preventDefault();
+          const filename = url.split("/").pop() || "file";
+          if (location.protocol === "file:") {
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            return;
+          }
+          try {
+            const resp = await fetch(url, { credentials: "same-origin" });
+            if (!resp.ok) throw new Error();
+            const blob = await resp.blob();
+            const blobUrl = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = blobUrl;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+          } catch {
+            window.open(url, "_blank", "noopener");
+          }
         });
-
-        observer.observe(homeSection, { attributes: true });
-      });
-
-      // Robust download handler:
-      // - If opened via file://, set anchor download and let browser handle it.
-      // - Otherwise try fetching and forcing a download (handles some servers/browsers).
-      document.addEventListener("click", async function (e) {
-        const el = e.target.closest("[data-download]");
-        if (!el) return;
-        const url = el.getAttribute("data-download") || el.getAttribute("href");
-        if (!url) return;
-
-        // Get filename
-        const filename = url.split("/").pop() || "file";
-
-        // If running from the file system, create anchor with download and let browser handle it.
-        if (location.protocol === "file:") {
-          e.preventDefault();
-          const a = document.createElement("a");
-          a.href = url;
-          a.download = filename;
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-          return;
-        }
-        // For http(s) try fetching and forcing save (avoids some cross-origin/download restrictions).
-        try {
-          e.preventDefault();
-          const resp = await fetch(url, { credentials: "same-origin" });
-          if (!resp.ok) throw new Error("Network response was not ok");
-          const blob = await resp.blob();
-          const blobUrl = URL.createObjectURL(blob);
-          const a = document.createElement("a");
-          a.href = blobUrl;
-          a.download = filename;
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-          // Revoke after a short delay to ensure download starts
-          setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
-        } catch (err) {
-          // Final fallback: open PDF in new tab so user can manually save
-          window.open(url, "_blank", "noopener");
-        }
       });
     </script>
   </body>
